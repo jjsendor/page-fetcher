@@ -1,0 +1,26 @@
+<h1>Page Fetcher</h1>
+
+<p id="notice"><%= flash[:notice] %></p>
+
+<%= form_for :page do |f| %>
+  <p>
+    <%= f.text_field :id %>
+  </p>
+  <p id="example">
+    <span>(example: 10376464573)</span>
+  </p>
+  <p>
+    <%= f.submit "Add" %>
+  </p>
+<% end %>
+
+<ul id="page_list">
+  <% @pages.each do |page| %>
+    <li>
+      <a href="<%= page_path(page) %>">
+	<img src="<%= page.picture %>" />
+	<span><%= page.name %></span>
+      </a>
+    </li>
+  <% end %>
+</ul> 

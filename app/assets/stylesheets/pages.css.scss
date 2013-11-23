@@ -1,0 +1,78 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$secondary-color: #777;
+
+body {
+  width: 900px;
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+#page_id {
+  width: 500px;
+  height: 45px;
+  font-size: 40px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  height: 40px;
+}
+
+#example {
+  text-align: left;
+  color: $secondary-color;
+  font-size: 12px;
+}
+
+#page_list {
+  width: 500px;
+  margin: 100px auto;
+}
+
+#page_list li, #feed li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#page_list li img {
+  border: solid 1px $secondary-color;
+  vertical-align: middle;
+}
+
+#page_list li a {
+  text-decoration: none;
+  font: 22px $font-stack;
+  color: $primary-color;
+}
+
+#page_list li a:hover {
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+#feed li {
+  font: 16px $font-stack;
+}
+
+#feed li h2 {
+  font-weight: bold;
+}
+
+#feed li span.time {
+  color: $secondary-color;
+}

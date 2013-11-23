@@ -1,0 +1,17 @@
+<h1>
+  <img src="<%= @page.picture %>" />
+  <span><%= @page.name %></span>
+</h1>
+
+<p id="notice"><%= flash[:notice] %></p>
+
+<ul id="feed">
+  <% @feed.each do |post| %>
+    <li>
+      <h2 class="author"><%= post['from']['name'] %></h2>
+      <p class="content"><%= post['message'] %></p>
+      <span class="time"><%= post['created_time'] %></span>
+      </a>
+    </li>
+  <% end %>
+</ul>
